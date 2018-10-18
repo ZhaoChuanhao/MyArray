@@ -91,6 +91,11 @@ public class MyArray<T> {
         return -1;
     }
 
+    //删除数组末尾的元素
+    public T remove(){
+        return remove(size - 1);
+    }
+
     //删除数组中指定位置的元素
     public T remove(int index){
         if (index < 0 || index >= size){
@@ -120,6 +125,7 @@ public class MyArray<T> {
         return false;
     }
 
+    //对数组进行扩容或缩容
     private void resize(int capacity){
         T[] newData = (T[])new Object[capacity];
         for (int i = 0; i < size; i++){

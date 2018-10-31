@@ -1,14 +1,11 @@
 package com.hd.dto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) {
 
         //测试一下写的这几个方法
-        MyArray<Integer> myArray = new MyArray();
+        MyArray<Integer> myArray = new MyArray<>();
         myArray.add(1);
         myArray.add(2);
         myArray.add(0, 0);
